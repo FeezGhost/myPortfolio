@@ -14,7 +14,7 @@ def homepage(request):
             subject,
             message,
             sender_email,
-            ['feezoocrazy420@gmail.com'],
+            ['feezoocrazy420@gmail.com']
         )
         return render(request, 'portfolio/index.html', {subject})
 
