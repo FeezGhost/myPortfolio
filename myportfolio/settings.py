@@ -126,9 +126,9 @@ STATICFILES_DIRS = [
 
 # Email Settings
 
-EMAIL_HOST = 'smpt.google.com'
-EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'feezoocrazy420@gmail.com'
 EMAIL_HOST_PASSWORD = 'crazy420'
-EMAIL_USE_TLS = True
+EMAIL_HOST = 'smpt.gmail.com'
+EMAIL_PORT = 587
 # EMAIL_USE_SLS = False
