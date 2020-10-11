@@ -17,6 +17,6 @@ def homepage(request):
             sender_email,
             ['hussainnaqvi106@gmail.com']
         )
-        return render(request, 'portfolio/index.html', {subject})
+        return render(request, 'portfolio/index.html', {'subject':subject})
 
     return render(request, 'portfolio/index.html', {})
