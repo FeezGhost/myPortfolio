@@ -10,11 +10,12 @@ def homepage(request):
         first_name =  request.POST['fname']
         last_name = request.POST['lname']
         subject = first_name + last_name
+        message = message + ' ' + sender_email
         send_mail(
             subject,
             message,
             sender_email,
-            ['feezoocrazy420@gmail.com']
+            ['hussainnaqvi106@gmail.com']
         )
         return render(request, 'portfolio/index.html', {subject})
 
